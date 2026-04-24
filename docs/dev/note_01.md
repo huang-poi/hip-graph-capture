@@ -1,0 +1,1 @@
+# Development Note 1\n\nfix(graph): handle empty graph in topological sort\n
