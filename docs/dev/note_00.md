@@ -1,0 +1,1 @@
+# Development Note 0\n\nrefactor(capture): improve thread safety with atomic operations\n
