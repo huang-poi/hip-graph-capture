@@ -1,0 +1,1 @@
+# Development Note 2\n\nperf(graph): optimize critical path with memoization\n
