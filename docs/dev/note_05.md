@@ -1,0 +1,1 @@
+# Development Note 5\n\nfeat(serializer): add binary serialization format\n
