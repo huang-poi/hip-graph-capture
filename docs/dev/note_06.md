@@ -1,0 +1,1 @@
+# Development Note 6\n\ndocs(readme): add multi-GPU usage examples\n
