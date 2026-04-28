@@ -1,0 +1,1 @@
+# Development Note 8\n\nfeat(graph): add memory conflict detection between nodes\n
