@@ -1,0 +1,1 @@
+# Development Note 10\n\nfeat(capture): add HIP callback-based capture mode\n
