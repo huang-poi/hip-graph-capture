@@ -1,0 +1,1 @@
+# Development Note 14\n\nfix(serializer): handle special characters in kernel names\n
