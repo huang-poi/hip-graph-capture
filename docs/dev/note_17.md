@@ -1,0 +1,1 @@
+# Development Note 17\n\nrefactor(graph): use adjacency list instead of matrix\n
