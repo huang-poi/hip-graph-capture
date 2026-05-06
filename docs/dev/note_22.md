@@ -1,0 +1,1 @@
+# Development Note 22\n\nfix(capture): handle kernel launch failures gracefully\n
