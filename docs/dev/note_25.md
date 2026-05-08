@@ -1,0 +1,1 @@
+# Development Note 25\n\nrefactor(serializer): unify JSON/binary format interface\n
