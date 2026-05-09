@@ -1,0 +1,1 @@
+# Development Note 26\n\nperf(capture): reduce lock contention in interceptor\n
