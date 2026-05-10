@@ -1,0 +1,1 @@
+# Development Note 29\n\nchore(cmake): add install targets and pkg-config\n
