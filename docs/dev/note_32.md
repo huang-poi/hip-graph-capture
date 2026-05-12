@@ -1,0 +1,1 @@
+# Development Note 32\n\ndocs(readme): add performance comparison table\n
