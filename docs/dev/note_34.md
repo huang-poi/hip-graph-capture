@@ -1,0 +1,1 @@
+# Development Note 34\n\ntest(capture): verify capture of hipMemcpyAsync\n
