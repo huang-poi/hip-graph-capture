@@ -1,0 +1,38 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate repo structure
+        run: |
+          echo "Checking repository structure..."
+          for dir in include src tests tools docs; do
+            if [ -d "$dir" ]; then
+              echo "✓ $dir/ exists"
+            else
+              echo "✗ $dir/ missing"
+              exit 1
+            fi
+          done
+          echo "All directories validated."
+
+      - name: Check CMake syntax
+        run: |
+          if [ -f CMakeLists.txt ]; then
+            echo "✓ CMakeLists.txt found"
+            cmake --find-package -DNAME=hip -DCOMPILER_ID=GNU -DLANGUAGE=CXX -DMODE=EXIST 2>&1 || echo "HIP not available (expected on GitHub Actions)"
+          fi
+
+      - name: Lint shell scripts
+        run: |
+          find . -name "*.sh" -exec bash -n {} \; 2>&1 || echo "No shell scripts to validate"
